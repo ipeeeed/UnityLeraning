@@ -395,6 +395,7 @@ GameObject:
   - component: {fileID: 641824184}
   - component: {fileID: 641824183}
   - component: {fileID: 641824182}
+  - component: {fileID: 641824192}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -502,11 +503,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 234ae8f3fb2a32e40860708438b00d6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  binario: 255
   inteiro: 1
-  flutuante: 1
-  real: 1000
+  inteiroLongo: 9223372036854775807
+  inteiroCurto: 32767
+  realCurto: 3.402823e+38
+  realMedio: 1.79769313486231e+308
   texto: teste
-  letra: 116
+  caractere: 116
   boleano: 1
   gameObject: {fileID: 0}
   transform: {fileID: 0}
@@ -575,6 +579,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &641824192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 641824181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41c8fd0849635c34eb0b6437eaf8d71a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &826100960
 GameObject:
   m_ObjectHideFlags: 0
@@ -700,11 +716,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 234ae8f3fb2a32e40860708438b00d6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  binario: 255
   inteiro: 1
-  flutuante: 1
-  real: 1000
+  inteiroLongo: 9223372036854775807
+  inteiroCurto: 32767
+  realCurto: 3.402823e+38
+  realMedio: 1.79769313486231e+308
   texto: teste
-  letra: 116
+  caractere: 116
   boleano: 1
   gameObject: {fileID: 0}
   transform: {fileID: 0}
@@ -947,11 +966,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 234ae8f3fb2a32e40860708438b00d6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  binario: 255
   inteiro: 1
-  flutuante: 1
-  real: 1000
+  inteiroLongo: 9223372036854775807
+  inteiroCurto: 32767
+  realCurto: 3.402823e+38
+  realMedio: 1.79769313486231e+308
   texto: teste
-  letra: 116
+  caractere: 116
   boleano: 1
   gameObject: {fileID: 0}
   transform: {fileID: 0}
@@ -1145,11 +1167,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 234ae8f3fb2a32e40860708438b00d6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  binario: 255
   inteiro: 1
-  flutuante: 1
-  real: 1000
+  inteiroLongo: 9223372036854775807
+  inteiroCurto: 32767
+  realCurto: 3.402823e+38
+  realMedio: 1.79769313486231e+308
   texto: teste
-  letra: 116
+  caractere: 116
   boleano: 1
   gameObject: {fileID: 0}
   transform: {fileID: 0}
