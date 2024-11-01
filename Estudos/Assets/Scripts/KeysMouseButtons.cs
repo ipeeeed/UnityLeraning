@@ -8,11 +8,6 @@ public class KeysMouseButtons : MonoBehaviour
         Debug.Log("Clicou");
     }
 
-    void Start()
-    {
-        
-    }
-
     void Update()
     {
         // Input - Usada para interações do jogador.
