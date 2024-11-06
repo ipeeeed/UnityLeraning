@@ -397,6 +397,8 @@ GameObject:
   - component: {fileID: 641824182}
   - component: {fileID: 641824192}
   - component: {fileID: 641824193}
+  - component: {fileID: 641824194}
+  - component: {fileID: 641824195}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -606,6 +608,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 0}
+--- !u!114 &641824194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 641824181}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fedf8f1a034eff74182792ea03a8e3d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MinhasDirecoes: 0
+--- !u!114 &641824195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 641824181}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95db46ac09fc5504e921cf55d030afb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Velocidade: 10
+  Rotacao: 200
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -933,7 +962,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1828151612}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1a85cb891a01e8944b80e0d904ff0727, type: 3}
   m_Name: 
