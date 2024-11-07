@@ -538,6 +538,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 483926963}
+  - component: {fileID: 483926964}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
@@ -554,7 +555,69 @@ Transform:
   m_GameObject: {fileID: 483926962}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.67, y: -0.92, z: 0.604}
+  m_LocalPosition: {x: -12.13, y: -0.15, z: -2.52}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &483926964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 483926962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 462ec7bf7bf37f749a7fbbfffd0c8b6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnerTempo: 1
+  Paredes:
+  - {fileID: 6373279606969281125, guid: 3081f37efae804444a930bb1689dcce2, type: 3}
+--- !u!1 &1199383328
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1199383330}
+  - component: {fileID: 1199383329}
+  m_Layer: 0
+  m_Name: Spawner (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1199383329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199383328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 462ec7bf7bf37f749a7fbbfffd0c8b6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnerTempo: 0.8
+  Paredes:
+  - {fileID: 6373279606969281125, guid: 3081f37efae804444a930bb1689dcce2, type: 3}
+--- !u!4 &1199383330
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199383328}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -12.13, y: -0.15, z: -11.02}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -897,3 +960,4 @@ SceneRoots:
   - {fileID: 2038222502}
   - {fileID: 478315857}
   - {fileID: 483926963}
+  - {fileID: 1199383330}

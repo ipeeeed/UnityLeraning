@@ -1,16 +1,25 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public float SpawnerTempo;
+    public List<GameObject> Paredes = new List<GameObject>();
+
     void Start()
     {
         
     }
 
-    // Update is called once per frame
+    float TempoCont;
     void Update()
     {
-        
+        TempoCont += Time.deltaTime;
+
+        if (TempoCont >= SpawnerTempo)
+        {
+            Instantiate(Paredes[Random.Range(0, Paredes.Count)], transform.position, transform.rotation);
+            TempoCont = 0f;
+        }
     }
 }
