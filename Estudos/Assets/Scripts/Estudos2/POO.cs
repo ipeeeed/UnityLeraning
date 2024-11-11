@@ -1,7 +1,6 @@
 using UnityEngine;
 
-public class POO : MonoBehaviour
-{
+public class POO : MonoBehaviour {
     public class Personagem {
         public float vida;
         public float poder;
