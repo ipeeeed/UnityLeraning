@@ -2,8 +2,8 @@
 ##  | C# | Java | 
 ### Orientação a Objetos
 ---
-[using](import) <br>
-[namespace](package) <br>
+[using][import] <br>
+[namespace][package] <br>
 [class] <br> <!-- Modelo de Objeto -->
 [interface] <br> <!-- Classe que não implementa métodos -->
 [this] <br> <!-- Referência a uma variável da Classe atual -->
@@ -27,25 +27,25 @@
 [set] <br> <!-- Propriedade modificadora -->
 ---
 ### Herança
-[:](extends) <br> <!-- Herdar de uma classe pai -->
-[:](implemenst) <br> <!-- Implementar uma classe pai -->
+[:][extends] <br> <!-- Herdar de uma classe pai -->
+[:][implemenst] <br> <!-- Implementar uma classe pai -->
 ---
 **Sobrescrita** <br>
 [virtual] <br>
-[override](@Override) <br>
+[override][@Override] <br>
 ---
 **Sobrecarga** <br>
-Quando o mesmo metodo tem tipos ou assinaturas diferentes
+`Quando o mesmo metodo tem tipos ou assinaturas diferentes`
 ```
-public void metodo(int inteiro){
-    ...
-}
-public void metodo(string texto){
-    ...
-}
-public string metodo(string texto){
-    ...
-}
+    public void metodo(int inteiro){
+        ...
+    }
+    public void metodo(string texto){
+        ...
+    }
+    public string metodo(string texto){
+        ...
+    }
 ```
 
 ### Polimorfismo
@@ -68,7 +68,7 @@ public string metodo(string texto){
 [float] <br> <!-- -3.402823E+38 a 3.402823E+38 -->
 [double] <br> <!-- -1.79769313486231E+308d a 1.79769313486231E+308d -->
 [decimal] <br> <!-- 7.9228162514264337593543950335m -->
-[string](String) <br> <!-- "teste" -->
+[string][String] <br> <!-- "teste" -->
 [char] <br> <!-- 't' -->
 ---
 ### Estruturas de dados e Lógicos
