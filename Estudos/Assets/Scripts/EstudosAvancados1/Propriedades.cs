@@ -20,6 +20,10 @@ public class Propriedades : MonoBehaviour
     // get => fazer a leitura do valor
     // set => modificar o valor
     public float health { get; private set; }
+    public float Speed { get => speed; private set => speed = value; }
+    public string PlayerName { get => playerName; set => playerName = value; }
+    public Rigidbody Rig { get => rig; set => rig = value;}
+    public Animator Anim { get => anim; set => anim = value;}
 
     public float damage {
         get {

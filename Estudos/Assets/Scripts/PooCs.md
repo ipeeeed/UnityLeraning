@@ -7,6 +7,7 @@
 [class] <br> <!-- Modelo de Objeto -->
 [interface] <br> <!-- Classe que não implementa métodos -->
 [this] <br> <!-- Referência a uma variável da Classe atual -->
+[value] <br> <!-- ?????? -->
 [new] <br> <!-- Instância de objeto -->
 [return] <br> <!-- Retorno de método ou função com tipagem diferente de void -->
 [static] <br>
