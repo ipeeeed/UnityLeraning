@@ -6,7 +6,7 @@ using UnityEngine;
 public class SimpleSingleton : MonoBehaviour
 {
     public float speed;
-    public static SimpleSingleton instance {get; private set; }
+    public static SimpleSingleton instance { get; private set; }
     
     private void Awake() {
         instance = this;
