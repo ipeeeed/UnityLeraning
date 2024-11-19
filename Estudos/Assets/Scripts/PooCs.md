@@ -15,6 +15,8 @@
 [var] <br> <!-- Variável global -->
 [struct] <br> <!-- Tupla ou valores diversos com um identificador -->
 [yield] <br>
+[delegate] <br>
+[event] <br>
 ---
 ### Abstração
 [abstract] <br>
