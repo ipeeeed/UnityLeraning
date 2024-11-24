@@ -3,20 +3,21 @@
 ### [C#][Java]
 ---
 [using][import] <br>
-[namespace][package] <br>
+[namespace][package] <br> <!-- Se comportam de maneiras parecidas, mas [package] é predefinido de acordo com o esquema de pasta e [namespace] é definido pelo próprio desenvolvedor -->
 [class] <br> <!-- Modelo de Objeto -->
-[interface] <br> <!-- Classe que não implementa métodos -->
+[interface] <br> <!-- "Classe" que não implementa métodos -->
+[struct] <br> <!-- Tupla ou valores diversos com um identificador -->
+[static] <br>
+[delegate] <br>
+[new] <br> <!-- Instância de objeto -->
 [this] <br> <!-- Referência a uma variável da Classe atual -->
 [value] <br> <!-- ?????? -->
-[new] <br> <!-- Instância de objeto -->
 [return] <br> <!-- Retorno de método ou função com tipagem diferente de void -->
-[static] <br>
 [null] <br> <!-- Valor nulo -->
 [var] <br> <!-- Variável global -->
-[struct] <br> <!-- Tupla ou valores diversos com um identificador -->
-[yield] <br>
-[delegate] <br>
 [event] <br>
+[internal] <br>
+[yield] <br>
 ---
 ### Abstração
 [abstract] <br>
@@ -91,6 +92,14 @@
 [List] <br>
 [ArrayList] <br>
 [Dictionary] <br>
+[Queue] <br>
+[Stack] <br>
+[Map] <br>
+[LinkedList] <br>
+---
+### Funções
+[Action] <br>
+[Func] <br>
 ---
 ### Tratamento de Exceção
 [try] <br>
