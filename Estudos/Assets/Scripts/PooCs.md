@@ -17,6 +17,7 @@
 [var] <br> <!-- Variável global -->
 [event] <br>
 [internal] <br>
+[sealed] <br>
 [yield] <br>
 ---
 ### Abstração
@@ -41,7 +42,7 @@
 ---
 **Sobrecarga** <br>
 `Quando o mesmo metodo tem tipos ou assinaturas diferentes`
-```
+``` c#
     public void metodo(int inteiro){
         ...
     }
@@ -112,3 +113,48 @@
 [await] <br>
 [Task] <br>
 ---
+### Event Functions
+``` C#
+    // Inicialização e Ciclo de Vida
+    void Awake(){}      // 1º: Configurações principais e referências
+    void OnEnable(){}   // Quando o objeto/componente ativa
+    void Start(){}      // Antes do primeiro frame, depois do Awake()
+    void OnDisable(){}  // Quando o objeto/componente desativa
+    void OnDestroy(){}  // Limpeza final antes de destruir
+
+    // Atualizações e Repetições (loops)
+    void Update(){}     // A cada frame - toda a logica do main game
+    void FixedUpdate(){}// Intervalo de tempo fixo - física apenas
+    void LateUpdate(){} // Depois da atualizações - cameras e ajustes finais
+
+    // Físicas e Colisões
+    void OnCollisionEnter(Collision other){}    // Primeiro toque
+    void OnCollisionStay(Collision other){}     // Durante o toque
+    void OnCollisionExit(Collision other){}     // Após o toque
+    void OnTriggerEnter(Collision other){}      // Entrando na zona de acionamento
+    void OnTriggerStay(Collision other){}       // Dentro da zona de acionamento
+    void OnTriggerExit(Collision other){}       // Ao sair da zona de acionamento
+
+    // Renderização e Visibilidade
+    void OnBecameVisible(){}    // Objeto entra em qualquer visualização de câmera
+    void OnBecameInvisible(){}  // Objeto sai de todas as visualizações de câmera
+    void OnRenderObject(){}     // Após acamera renderizar a cena
+    void OnWillRenderObject(){} // Antes de cada renderização de câmera
+    void OnGUI(){}              // IMGUI renderização
+
+    // Aplicações de Fluxos
+    void OnAplicationFocus(bool focus){}    // Mudança de foco da janela
+    void OnAplicationPause(bool pause){}    // App pausa/continua
+    void OnAplicationQuit(){}               // Antes do app fechar
+
+    // Entrada e Interação
+    void OnMouseEnter(){}
+    void OnMouseOver(){}
+    void OnMouseExit(){}
+    void OnMouseDown(){}
+    void OnMouseUp(){}
+    void OnMouseDrag(){}
+
+    // Editor e Desenvolvimento
+    void 
+```
