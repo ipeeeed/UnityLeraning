@@ -1,20 +1,20 @@
-# `Unity`
-## Orientação a Objetos
-### [C#][Java]
+# Unity Development [C#]
 ---
-[using][import] <br>
-[namespace][package] <br> <!-- Se comportam de maneiras parecidas, mas [package] é predefinido de acordo com o esquema de pasta e [namespace] é definido pelo próprio desenvolvedor -->
-[class] <br> <!-- Modelo de Objeto -->
-[interface] <br> <!-- "Classe" que não implementa métodos -->
-[struct] <br> <!-- Tupla ou valores diversos com um identificador -->
+## POO
+<!-- Comentários -->
+[using] Importação de recursos de outras Classes <br>
+[namespace] É definido pelo próprio desenvolvedor para organiza~çao de grupos <br>
+[class] Modelo de Objeto <br>
+[interface] "Classe" que não implementa métodos <br>
+[struct] Tupla ou valores diversos com um identificador <br>
 [static] <br>
 [delegate] <br>
-[new] <br> <!-- Instância de objeto -->
-[this] <br> <!-- Referência a uma variável da Classe atual -->
-[value] <br> <!-- ?????? -->
-[return] <br> <!-- Retorno de método ou função com tipagem diferente de void -->
-[null] <br> <!-- Valor nulo -->
-[var] <br> <!-- Variável global -->
+[new] Instância de objeto <br>
+[this] Referência a uma variável da Classe atual <br>
+[value] <br>
+[return] Retorno de método ou função com tipagem diferente de void <br>
+[null] Valor nulo <br>
+[var] Variável global <br>
 [event] <br>
 [internal] <br>
 [sealed] <br>
@@ -24,21 +24,21 @@
 [abstract] <br>
 ---
 ### Encapsulamento
-[public] <br> <!-- Modificador de acesso aberto -->
-[private] <br> <!-- Modificador de acesso fechado -->
-[protected] <br> <!-- Modificador de acesso aberto apenas para classes herdeiras -->
-[readonly] <br>
-[get] <br> <!-- Propriedade de consulta -->
-[set] <br> <!-- Propriedade modificadora -->
+[public] Modificador de acesso aberto <br>
+[private] Modificador de acesso fechado <br>
+[protected] Modificador de acesso aberto apenas para classes herdeiras <br>
+[readonly] 
+[get] Propriedade de consulta <br>
+[set] Propriedade modificadora <br>
 ---
 ### Herança
-[:][extends] <br> <!-- Herdar de uma classe pai -->
-[:][implemenst] <br> <!-- Implementar uma classe pai -->
+[:][extends] Herdar de uma classe pai <br>
+[:][implemenst] Implementar uma classe pai <br>
 ---
 ### Polimorfismo
 **Sobrescrita** <br>
 [virtual] <br>
-[override][@Override] <br>
+[override] <br>
 ---
 **Sobrecarga** <br>
 `Quando o mesmo metodo tem tipos ou assinaturas diferentes`
@@ -53,27 +53,27 @@
         ...
     }
 ```
-[x]<br>
+
 ---
 ### Tipos primitivos
-[void] <br> <!-- Tipo vazio -->
-[const] <br> <!-- Valor constante -->
-[enum] <br> <!-- Enumeração de valores -->
+[void] Tipo vazio <br>
+[const] Valor constante <br>
+[enum] Enumeração de valores <br>
 ---
-[bool] <br> <!-- true e false -->
-[byte] <br> <!-- 0 a 255 -->
-[sbyte] <br> <!-- -128 a 127  -->
-[int] <br> <!-- -2147483648 a 2147483647 -->
-[uint] <br> <!-- 0 a 4294967295 -->
-[long] <br> <!-- -9223372036854775808 a 9223372036854775807 -->
-[ulong] <br> <!-- 0 a 18446744073709551615 -->
-[short] <br> <!-- -32768 a 32767 -->
-[ushort] <br> <!-- 0 a 65535 -->
-[float] <br> <!-- -3.402823E+38 a 3.402823E+38 -->
-[double] <br> <!-- -1.79769313486231E+308d a 1.79769313486231E+308d -->
-[decimal] <br> <!-- 7.9228162514264337593543950335m -->
-[string][String] <br> <!-- "teste" -->
-[char] <br> <!-- 't' -->
+[bool] true e false <br>
+[byte] 0 a 255 <br>
+[sbyte] -128 a 127  <br>
+[int] -2147483648 a 2147483647 <br>
+[uint] 0 a 4294967295 <br>
+[long] -9223372036854775808 a 9223372036854775807 <br>
+[ulong] 0 a 18446744073709551615 <br>
+[short] -32768 a 32767 <br>
+[ushort] 0 a 65535 <br>
+[float] -3.402823E+38 a 3.402823E+38 <br>
+[double] -1.79769313486231E+308d a 1.79769313486231E+308d <br>
+[decimal] 7.9228162514264337593543950335m <br>
+[string] "teste" <br>
+[char] 't' <br>
 ---
 ### Estruturas de dados e Lógicos
 [if] <br>
@@ -120,7 +120,7 @@
 
 
 
-### Cheat-Sheet [Unity]
+## Cheat-Sheet [Unity]
 ``` C#
     // EVENT FUNCTIONS
     // Inicialização e Ciclo de Vida
