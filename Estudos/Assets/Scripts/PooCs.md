@@ -2,19 +2,19 @@
 ---
 ## POO
 <!-- Comentários -->
-- [using] Importação de recursos de outras Classes <br>
-- [namespace] É definido pelo próprio desenvolvedor para organização de grupos <br>
-- [class] Modelo de Objeto <br>
-- [interface] "Classe" que não implementa métodos <br>
-- [struct] Tupla ou valores diversos com um identificador <br>
+- [using]                   Importação de recursos de outras Classes <br>
+- [namespace]               É definido pelo próprio desenvolvedor para organização de grupos <br>
+- [class]                   Modelo de Objeto <br>
+- [interface]               "Classe" que não implementa métodos <br>
+- [struct]                  Tupla ou valores diversos com um identificador <br>
 - [static] <br>
 - [delegate] <br>
-- [new] Instância de objeto <br>
-- [this] Referência a uma variável da Classe atual <br>
+- [new]                     Instância de objeto <br>
+- [this]                    Referência a uma variável da Classe atual <br>
 - [value] <br>
-- [return] Retorno de método ou função com tipagem diferente de void <br>
-- [null] Valor nulo <br>
-- [var] Variável global <br>
+- [return]                  Retorno de método ou função com tipagem diferente de void <br>
+- [null]                    Valor nulo <br>
+- [var]                     Variável global <br>
 - [event] <br>
 - [internal] <br>
 - [sealed] <br>
@@ -24,16 +24,16 @@
 - [abstract] <br>
 ---
 ### Encapsulamento
-- [public] Modificador de acesso aberto <br>
-- [private] Modificador de acesso fechado <br>
-- [protected] Modificador de acesso aberto apenas para classes herdeiras <br>
+- [public]                  Modificador de acesso aberto <br>
+- [private]                 Modificador de acesso fechado <br>
+- [protected]               Modificador de acesso aberto apenas para classes herdeiras <br>
 - [readonly] 
-- [get] Propriedade de consulta <br>
-- [set] Propriedade modificadora <br>
+- [get]                     Propriedade de consulta <br>
+- [set]                     Propriedade modificadora <br>
 ---
 ### Herança
-- [:](extends) Herdar de uma classe pai <br>
-- [:](implemenst) Implementar uma classe pai <br>
+- [:](extends)              Herdar de uma classe pai <br>
+- [:](implemenst)           Implementar uma classe pai <br>
 ---
 ### Polimorfismo
 **Sobrescrita** <br>
@@ -56,24 +56,24 @@
 
 ---
 ### Tipos primitivos
-- [void] Tipo vazio <br>
-- [const] Valor constante <br>
-- [enum] Enumeração de valores <br>
+- [void]                    Tipo vazio <br>
+- [const]                   Valor constante <br>
+- [enum]                    Enumeração de valores <br>
 ---
-- [bool] true e false <br>
-- [byte] 0 a 255 <br>
-- [sbyte] -128 a 127  <br>
-- [int] -2147483648 a 2147483647 <br>
-- [uint] 0 a 4294967295 <br>
-- [long] -9223372036854775808 a 9223372036854775807 <br>
-- [ulong] 0 a 18446744073709551615 <br>
-- [short] -32768 a 32767 <br>
-- [ushort] 0 a 65535 <br>
-- [float] -3.402823E+38 a 3.402823E+38 <br>
-- [double] -1.79769313486231E+308d a 1.79769313486231E+308d <br>
-- [decimal] 7.9228162514264337593543950335m <br>
-- [string] "teste" <br>
-- [char] 't' <br>
+- [bool]                    true e false <br>
+- [byte]                    0 a 255 <br>
+- [sbyte]                   -128 a 127  <br>
+- [int]                     -2147483648 a 2147483647 <br>
+- [uint]                    0 a 4294967295 <br>
+- [long]                    -9223372036854775808 a 9223372036854775807 <br>
+- [ulong]                   0 a 18446744073709551615 <br>
+- [short]                   -32768 a 32767 <br>
+- [ushort]                  0 a 65535 <br>
+- [float]                   -3.402823E+38 a 3.402823E+38 <br>
+- [double]                  -1.79769313486231E+308d a 1.79769313486231E+308d <br>
+- [decimal]                 7.9228162514264337593543950335m <br>
+- [string]                  "teste" <br>
+- [char]                    't' <br>
 ---
 ### Estruturas de dados e Lógicos
 - [if] <br>
