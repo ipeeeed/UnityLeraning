@@ -3,10 +3,46 @@
 ## POO
 <!-- Comentários -->
 - [using]---------------------------------------Importação de recursos de outras Classes <br>
+```C#
+    using System.Collections;
+    using System.Collections.Generic;
+    using UnityEngine;
+    
+    // ...código
+```
+
 - [namespace]-----------------------------------É definido pelo próprio desenvolvedor para organização de grupos <br>
-- [class]---------------------------------------Modelo de Objeto <br>
+```C#
+namespace Nome
+{
+    // ...classe
+}
+```
+
+- [class]---------------------------------------Modelo dos Objetos <br>
+```C#
+public class Jogo
+{
+    // ...implementação
+}
+```
+
 - [interface]-----------------------------------"Classe" que não implementa métodos <br>
+```C#
+public interface JogoGerenciador
+{
+    // ...declaração
+}
+```
+
 - [struct]--------------------------------------Tupla ou valores diversos com um identificador <br>
+```C#
+struct Tupla
+{
+    // ...código
+}
+```
+
 - [static] <br>
 - [delegate] <br>
 - [new]-----------------------------------------Instância de objeto <br>
@@ -32,8 +68,7 @@
 - [set]-----------------------------------------Propriedade modificadora <br>
 ---
 ### Herança
-- [:](extends)----------------------------------Herdar de uma classe pai <br>
-- [:](implemenst)-------------------------------Implementar uma classe pai <br>
+- [:]{extends}{Implements}----------------------Herdar e Implementar uma classe pai <br>
 ---
 ### Polimorfismo
 **Sobrescrita** <br>
