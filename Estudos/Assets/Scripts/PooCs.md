@@ -1,8 +1,8 @@
 # Unity Development [C#]
----
 ## POO
 <!-- Comentários -->
-- [using]---------------------------------------Importação de recursos de outras Classes
+[using]
+Importação de recursos de outras Classes
 ```C#
 using System.Collections;
 using System.Collections.Generic;
@@ -11,7 +11,8 @@ using UnityEngine;
 // ...código
 ```
 
-- [namespace]-----------------------------------É definido pelo próprio desenvolvedor para organização de grupos
+[namespace]
+É definido pelo próprio desenvolvedor para organização de grupos
 ```C#
 namespace Nome
 {
@@ -19,7 +20,8 @@ namespace Nome
 }
 ```
 
-- [class]---------------------------------------Modelo dos Objetos
+[class]
+Modelo dos Objetos
 ```C#
 class Jogo
 {
@@ -27,7 +29,8 @@ class Jogo
 }
 ```
 
-- [interface]-----------------------------------"Classe" que não implementa métodos
+[interface]
+"Classe" que não implementa métodos
 ```C#
 interface JogoGerenciador
 {
@@ -35,7 +38,8 @@ interface JogoGerenciador
 }
 ```
 
-- [struct]--------------------------------------Tupla ou valores diversos com um identificador
+[struct]
+Tupla ou valores diversos com um identificador
 ```C#
 struct Tupla
 {
@@ -43,38 +47,58 @@ struct Tupla
 }
 ```
 
-- [static] <br>
-- [delegate] <br>
-- [new]-----------------------------------------Instância de objeto <br>
-- [this]----------------------------------------Referência a uma variável da Classe atual <br>
-- [value] <br>
-- [return]--------------------------------------Retorno de método ou função com tipagem diferente de void <br>
-- [null]----------------------------------------Valor nulo <br>
-- [var]-----------------------------------------Variável global <br>
-- [event] <br>
-- [internal] <br>
-- [sealed] <br>
-- [yield] <br>
----
+[static] <br>
+[delegate] <br>
+[new]
+Instância de objeto <br>
+
+[this]
+Referência a uma variável da Classe atual <br>
+
+[value] <br>
+[return]
+Retorno de método ou função com tipagem diferente de void <br>
+
+[null]
+Valor nulo <br>
+
+[var]
+Variável global <br>
+
+[event] <br>
+[internal] <br>
+[sealed] <br>
+[yield] <br>
+
 ### Abstração
-- [abstract] <br>
----
+[abstract] <br>
+
 ### Encapsulamento
-- [public]--------------------------------------Modificador de acesso aberto <br>
-- [private]-------------------------------------Modificador de acesso fechado <br>
-- [protected]-----------------------------------Modificador de acesso aberto apenas para classes herdeiras <br>
-- [readonly] 
-- [get]-----------------------------------------Propriedade de consulta <br>
-- [set]-----------------------------------------Propriedade modificadora <br>
----
+[public]
+Modificador de acesso aberto <br>
+
+[private]
+Modificador de acesso fechado <br>
+
+[protected]
+Modificador de acesso aberto apenas para classes herdeiras <br>
+
+[readonly] 
+[get]
+Propriedade de consulta <br>
+
+[set]
+Propriedade modificadora <br>
+
 ### Herança
-- [:]{extends}{Implements}----------------------Herdar e Implementar uma classe pai <br>
----
+[:]{extends}{Implements}
+Herdar e Implementar uma classe pai <br>
+
 ### Polimorfismo
 **Sobrescrita** <br>
-- [virtual] <br>
-- [override] <br>
----
+[virtual] <br>
+[override] <br>
+
 **Sobrecarga** <br>
 `Quando o mesmo metodo tem tipos ou assinaturas diferentes`
 ``` C#
@@ -89,70 +113,69 @@ struct Tupla
     }
 ```
 
----
 ### Tipos primitivos
-- [void]----------------------------------------Tipo vazio <br>
-- [const]---------------------------------------Valor constante <br>
-- [enum]----------------------------------------Enumeração de valores <br>
----
-- [bool]----------------------------------------(true e false) <br>
-- [byte]----------------------------------------(0 a 255) <br>
-- [sbyte]---------------------------------------(-128 a 127 ) <br>
-- [int]-----------------------------------------(-2147483648 a 2147483647) <br>
-- [uint]----------------------------------------(0 a 4294967295) <br>
-- [long]----------------------------------------(-9223372036854775808 a 9223372036854775807) <br>
-- [ulong]---------------------------------------(0 a 18446744073709551615) <br>
-- [short]---------------------------------------(-32768 a 32767) <br>
-- [ushort]--------------------------------------(0 a 65535) <br>
-- [float]---------------------------------------(-3.402823E+38 a 3.402823E+38) <br>
-- [double]--------------------------------------(-1.79769313486231E+308d a 1.79769313486231E+308d) <br>
-- [decimal]-------------------------------------(7.9228162514264337593543950335m) <br>
-- [string]--------------------------------------("teste") <br>
-- [char]----------------------------------------('t') <br>
----
+[void]
+Tipo vazio <br>
+
+[const]
+Valor constante <br>
+
+[enum]
+Enumeração de valores <br>
+
+[bool] (true e false) <br>
+[byte] (0 a 255) <br>
+[sbyte] (-128 a 127 ) <br>
+[int] (-2147483648 a 2147483647) <br>
+[uint] (0 a 4294967295) <br>
+[long] (-9223372036854775808 a 9223372036854775807) <br>
+[ulong] (0 a 18446744073709551615) <br>
+[short] (-32768 a 32767) <br>
+[ushort] (0 a 65535) <br>
+[float] (-3.402823E+38 a 3.402823E+38) <br>
+[double] (-1.79769313486231E+308d a 1.79769313486231E+308d) <br>
+[decimal] (7.9228162514264337593543950335m) <br>
+[string] ("teste") <br>
+[char] ('t') <br>
+
 ### Estruturas de dados e Lógicos
-- [if] <br>
-- [else] <br>
-- [else_if] <br>
-- [switch] <br>
-- [break] <br>
-- [continue] <br>
-- [case] <br>
-- [default] <br>
-- [for] <br>
-- [foreach] <br>
-- [while] <br>
-- [do_while] <br>
----
+[if] <br>
+[else] <br>
+[else_if] <br>
+[switch] <br>
+[break] <br>
+[continue] <br>
+[case] <br>
+[default] <br>
+[for] <br>
+[foreach] <br>
+[while] <br>
+[do_while] <br>
+
 ### Coleções
-- [List] <br>
-- [ArrayList] <br>
-- [Dictionary] <br>
-- [Queue] <br>
-- [Stack] <br>
-- [Map] <br>
-- [LinkedList] <br>
----
+[List] <br>
+[ArrayList] <br>
+[Dictionary] <br>
+[Queue] <br>
+[Stack] <br>
+[Map] <br>
+[LinkedList] <br>
+
 ### Funções
-- [Action] <br>
-- [Func] <br>
----
+[Action] <br>
+[Func] <br>
+
 ### Tratamento de Exceção
-- [try] <br>
-- [catch] <br>
-- [finally] <br>
-- [throw] <br>
----
+[try] <br>
+[catch] <br>
+[finally] <br>
+[throw] <br>
+
 ### Assincronismo
-- [async] <br>
-- [await] <br>
-- [Task] <br>
+[async] <br>
+[await] <br>
+[Task] <br>
 ---
-
-
-
-
-
 
 
 ## Cheat-Sheet [Unity]
