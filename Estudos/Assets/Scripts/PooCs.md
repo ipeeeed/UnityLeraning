@@ -2,16 +2,16 @@
 ---
 ## POO
 <!-- Comentários -->
-- [using]---------------------------------------Importação de recursos de outras Classes <br>
+- [using]---------------------------------------Importação de recursos de outras Classes
 ```C#
-    using System.Collections;
-    using System.Collections.Generic;
-    using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
     
-    // ...código
+// ...código
 ```
 
-- [namespace]-----------------------------------É definido pelo próprio desenvolvedor para organização de grupos <br>
+- [namespace]-----------------------------------É definido pelo próprio desenvolvedor para organização de grupos
 ```C#
 namespace Nome
 {
@@ -19,23 +19,23 @@ namespace Nome
 }
 ```
 
-- [class]---------------------------------------Modelo dos Objetos <br>
+- [class]---------------------------------------Modelo dos Objetos
 ```C#
-public class Jogo
+class Jogo
 {
     // ...implementação
 }
 ```
 
-- [interface]-----------------------------------"Classe" que não implementa métodos <br>
+- [interface]-----------------------------------"Classe" que não implementa métodos
 ```C#
-public interface JogoGerenciador
+interface JogoGerenciador
 {
     // ...declaração
 }
 ```
 
-- [struct]--------------------------------------Tupla ou valores diversos com um identificador <br>
+- [struct]--------------------------------------Tupla ou valores diversos com um identificador
 ```C#
 struct Tupla
 {
