@@ -180,6 +180,8 @@ Enumeração de valores <br>
 
 ## Cheat-Sheet [Unity]
 ``` C#
+
+
     // EVENT FUNCTIONS
     // Inicialização e Ciclo de Vida
     void Awake(){}                              // 1º: Configurações principais e referências
@@ -227,6 +229,7 @@ Enumeração de valores <br>
     void OnValidate(){}                         // Depois ????
 
 
+
     // COMPONENT COMMUNICATION
     // Acesso Direto aos Componentes Unity
     GetComponent<T>();
@@ -246,6 +249,7 @@ Enumeração de valores <br>
     // Referências Diretas
     [SerializeField] componentRef;
     cachedComponent;
+
 
 
     // DATA STRUCTURES
@@ -277,6 +281,7 @@ Enumeração de valores <br>
 
     // Particionamento Espacial
     SpatialHash<T> worldPartition;              // Pesquisas baseadas no espaço
+
 
 
     // INSPECTOR ATTRIBUTES
@@ -313,6 +318,8 @@ Enumeração de valores <br>
     [InitializedOnLoad]                         // Execução do editor durante carregamento
     [InitializedOnLoadMethod]                   // Método chama durante carregamento
     [SelectionBase]                             // Define meta de seleção primária
+
+
 
     // DEBUGGING
     // Funções de debug de console
@@ -356,4 +363,97 @@ Enumeração de valores <br>
     Debug.Log($"Active scene: {UnityEngine.SceneManagement.SceneManager.GetActiveScene().name}");                                                   // Acive scene
     Debug.Log($"Frame count: {Time.frameCount}"); // Log de contagem de frames
     Debug.Log($"Delta time: {Time.deltaTime}"); // Log de tempo entre frames
+
+
+
+    // NEW INPUT SYSTEM
+    // Setup e configurações
+    [SerializeField] InputActionAsset inputAsset;   // Asset reference
+    [SerializeField] PlayerInput playerInput;       // Componente de entrada do player
+    InputActionMap gameplayMap;                     // Referência de action map
+    InputAction moveAction;                         // Ação única
+
+    // Mapas de ação e ligação
+    new InputActionMap("GameplayMap");              // Criar map
+    action.AddBinding("<Keyboard>/w");              // Ligação basica
+    action.AddBinding("<Gamepad>/leftStick");       // Ligação de controle
+    action.AddBinding("<Mouse>/delta");             // Ligação de mouse
+    action.AddBinding("<Touchscreen>/primaryTouch");// Ligação de touch
+    action.AddBinding("<XRController>trigger/");    // Ligação de VR
+
+    // Ligações compostas
+    action.AddCompositeBinding("2DVector")          // WASD/Setas
+        .With("Up", "<Keyboard>/w")
+        .With("Down", "<Keyboard>/s")
+        .With("Left", "<Keyboard>/a")
+        .With("Right", "<Keyboard>/d");
+    
+    // Exemplos de sintaxe de caminhos de entradas
+    "<Gamepad>/"                                    // Todas as entradas de gamepad
+    "<Keyboard>/anyKey"                             // Qualquer entrada de teclado
+    "<Mouse>/leftButton"                            // Botões do mouse
+    "<XRController>(LeftHand)/trigger"              // Controles VR
+
+    // Lendo valores de entrada
+    action.ReadValue<Vector2>();                    // Entrada Vetorial
+    action.ReadValue<float>();                      // Entrada Escalonada
+    action.IsPressed();                             // Estado do botão
+    action.WasPressedThisFrame();                   // Verificação de quadro
+    action.WasReleasedThisFrame();                  // Verificação de liberação
+    action.IsInProgress();                          // Status de ação
+
+    // Eventos de entrada e retornos de chamada
+    action.performed += ctx => { };                 // Desempenho de entrada
+    action.started += ctx => { };                   // Entrada iniciada
+    action.canceled += ctx => { };                  // Entrada cancelada
+    InputSystem.onDeviceChange += (d, c) => { };    // Eventos do dispositivo
+    playerInput.onActionTriggered += ctx => { };    // Eventos de entrada de player
+
+    // Tipos de interação
+    action.AddBinding().WithInteraction("Tap");     // Pressionada rápida
+    action.AddBinding().WithInteraction("Hold");    // Pressiona e segura
+    action.AddBinding().WithInteraction("SlowTap"); // Pressionada lenta
+    action.AddBinding().WithInteraction("MultiTap");// Múltiplas pressionadas
+
+    // Gerenciamento de dispositivo
+    InputSystem.devices;                            // Todos os dispositivos
+    Gamepad.all;                                    // Todos os controles
+    Gamepad.current;                                // Controles ativos
+    InputSystem.EnableDevice(device);               // Dispositivos ativados
+    InputSystem.DisableDevice(device);              // Dispositivos desativados
+
+    // Haptic feedback (Tátil, sensível ao toque)
+    gamepad.SetMotorSpeeds(leftMotor, rightMotor);  // Vibração
+    gamepad.PauseHaptics();                         // Toque em pausa
+    gamepad.ResumeHaptics();                        // Toque continuo
+    gamepad.ResetHaptics();                         // Parar toque
+
+    // Esquemas de controle
+    playerInput.SwitchCurrentControlScheme("Gamepad");// Mudar para controle
+    playerInput.currentControlScheme;               // Esquema atual
+    playerInput.devices;                            // Dispositivos ativos
+
+    // Configurações de entrada
+    InputSystem.settings.updateMode;                // Tempo de atualização
+    InputSystem.settings.filterNoiseOnCurrent;      // Filtragem de ruído
+    action.processors = "normalize(min=0,max=1)";   // Processamento de entrada
+
+    // Ferramentas de debug
+    Debug.Log(action.enabled);                      // Estado da ação
+    Debug.Log(action.controls);                     // Controles vinculados
+    Debug.Log(InputSystem.devices.Count);           // Contador de dispositivos
+
+
+
+    // RENDERING PIPELINE
+    public class RenderPipelineCeaeatSheet : Monobehaviour
+    {
+        // Configurações de renderização
+        Camera.main.renderingPath = RenderingPath.Forward;
+        Camera.main.renderingPath = RenderingPath.DeferredShading;
+        Camera.main.allowHDR = true;
+        Camera.main.allowNSAA = true;
+
+        // Configurações de qualidade
+    }
 ```
