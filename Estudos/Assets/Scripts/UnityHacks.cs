@@ -260,7 +260,7 @@ Herdar e Implementar uma classe pai <br>
     // Editor e Desenvolvimento
     void OnDrawGizmos(){}                       // Desenha um gizmo visual para debugar
     void OnDrawGizmosSelected(){}               // Desenha quando selecionado
-    void OnValidate(){}                         // Depois ????
+    void OnValidate(){}                         // Depois de ????
     #endregion Event Function
 
     // COMPONENT COMMUNICATION
