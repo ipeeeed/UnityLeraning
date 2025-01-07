@@ -848,4 +848,44 @@ Herdar e Implementar uma classe pai <br>
         camera.RemoveCommandBuffer(CameraEvent.AfterImageEffects, commandBuffer);
     }
     #endregion Camera
+
+    // PHYSICS: RIGIDBODY
+    #region Rigidbody
+    // Basic Movement
+    rb.velocity = new Vector3(5f, 0f, 0f);
+    rb.AddForce(Vector3.up * 500f);
+    rb.AddForce(Vector3.up * 10f);
+    rb.MovePosition(transform.position + movement * Time.fixedDeltaTime);
+    Vector3 pointVel = rb.GetPointVelocity(worldPoint);
+    Vector3 relativeVel = rb.GetRelativePointVelocity(relativePoint);
+
+    // Rotation
+    rb.angularVelocity = new Vector3(0f, 90f, 0f);
+    rb.AddTorque(transform.up * 50f);
+    rb.AddRelativeTorque(Vector3.up * 10f);
+    rb.MoveRotation(Quaternion.Euler(0f, 90f, 0f));
+
+    // Impact & Physics State
+    rb.AddExplosionForce(1000f, explosionCenter, 10f, 2f);
+    rb.AddForcePosition(Vector3.up * 10f, transform.position + offset);
+    rb.Sleep();
+    rb.WakeUp();
+    bool isSleeping = rb.IsSleeping();
+
+    // Propierties & Constraints
+    rb.mass = 5f;
+    rb.drag = 1f;
+    rb.angularDrag = 0.5f;
+    rb.useGravity = true;
+    rb.isKinematic = false;
+    rb.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyContraints.FreezeRotationZ;
+
+    // Center of Mass
+    rb.centerOfMass = new Vector3(0f, 1f, 0f);
+    rb.ResetCenterOfMass();
+
+    // Velocity Operations
+    rb.GetPointVelocity(worlPoint);
+    rb.GetRelativePointVelocity(relativePoint);
+    #endregion Rigidbody
 #endregion Unity Codes
