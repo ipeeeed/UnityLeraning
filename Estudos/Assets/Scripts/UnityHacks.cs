@@ -888,4 +888,73 @@ Herdar e Implementar uma classe pai <br>
     rb.GetPointVelocity(worlPoint);
     rb.GetRelativePointVelocity(relativePoint);
     #endregion Rigidbody
+
+    // SHADERS AND MATERIALS
+    #region Shader & Material
+    public class UnityShadersAndMaterials : MonoBehaviour
+    {
+        // Material Propierties
+        material.color = Color.red;
+        material.SetColor("_BaseColor", Color.blue);
+        material.SetTexture("_BaseMap", texture);
+        material.SetFloat("_Glossiness", 0.5f);
+        material.mainTexture = texture;
+        material.mainTextureScale = new Vector2(2, 2);
+        material.mainTextureOffset = new Vector2(0.5, 0.5f);
+        material.shader = Shader.Find("Standard");
+
+        // Shader Keywords
+        material.EnableKeyword("_EMISSION");
+        material.DisableKeyword("_EMISSION");
+        bool isKeywordEnabled = material.IsKeywordEnabled("_EMISSION");
+
+        // Shader Properties
+        material.SetFloat("_Metallic", 0.8f);
+        material.SetVector("_EmissionColor", new Vector4(1, 1, 0, 1));
+        material.SetMatrix("_CustomMatrix", Matrix4x4.identity);
+
+        // GPU Instancing
+        material.enableInstancing = true;
+        bool isInstancingEnabled = material.enableInstancing;
+
+        // Rendering Settings
+        material.renderQueue = 3000;
+        material.globalIlluminationFlags = MaterialGlobalIlluminationFlags.RealtimeEmissive;
+
+        // Shader Util Fuctions
+        int propertyID = Shader.PropertyToId("_BaseColor");
+        Shader.SetGlobalFloat("_GlobalValue", 1.0f);
+        Shader.SetGlobalVector("_GlobalVector", Vector4.one);
+        Shader.SetGlobalColor("_GlobalColor", Color.green);
+        Shader.SetGlobalTexture("_GlobalTexture", texture);
+        Shader.EnableKeyword("GLOBAL_KEYWORD");
+        Shader.DisableKeyword("GLOBAL_KEYWORD");
+        Shader.WarmupAllShaders();
+
+        // Advanced Shader Propierties
+        material.SetOverrideTag("RenderType", "Transparent");
+        string renderType = material.GetTag("RenderType", false);
+
+        // Shader Debugging
+        bool isShaderSupported = material.shader.isSupported;
+        int passCount = material.passCount;
+        string shaderName = material.shader.name;
+
+        // Shader Graph Integration
+        material.SetVector("_CustomShaderProperty", new Vector4(0, 1, 0, 1));
+        material.SetTexture("_CustomShaderTexture", texture);
+
+        // Editor Debugging
+        Debug.Log(material.HasProperty("_BaseMap"));
+        Debug.DrawRay(transform.position, transform.forward * 5, colliderObject.red);
+
+        // Extended Shader Function
+        material.SetShaderPassEnabled("Always", true);
+        bool isPassEnabled = material.GetShaderPassEnabled("Always");
+        ShaderName.Find("Hidden/Internal-Colored");
+        ShaderName.globalRenderPipeline = "UniversalPipeline";
+        material.CopyPropiertiesFromMaterial(otherMaterial);
+        material.doubleSidedGI = true;
+    }
+    #endregion Shader & Material
 #endregion Unity Codes
